@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/VKIDS2004/GCA-karur.git/static/css/main.a11f5b74.css",
+    "main.js": "/VKIDS2004/GCA-karur.git/static/js/main.c4536205.js",
+    "static/media/right arrow.png": "/VKIDS2004/GCA-karur.git/static/media/right arrow.85bf0649678ce80185da.png",
+    "static/media/left arrow.png": "/VKIDS2004/GCA-karur.git/static/media/left arrow.4ac8dc10f00213a828f8.png",
+    "static/media/calender logo.png": "/VKIDS2004/GCA-karur.git/static/media/calender logo.d898d735635dab6fabe5.png",
+    "index.html": "/VKIDS2004/GCA-karur.git/index.html",
+    "main.a11f5b74.css.map": "/VKIDS2004/GCA-karur.git/static/css/main.a11f5b74.css.map",
+    "main.c4536205.js.map": "/VKIDS2004/GCA-karur.git/static/js/main.c4536205.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a11f5b74.css",
+    "static/js/main.c4536205.js"
+  ]
+}

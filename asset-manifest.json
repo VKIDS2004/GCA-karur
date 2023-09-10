@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/GCA-karur/static/css/main.a11f5b74.css",
-    "main.js": "/GCA-karur/static/js/main.d1dc599e.js",
-    "static/media/right arrow.png": "/GCA-karur/static/media/right arrow.85bf0649678ce80185da.png",
-    "static/media/left arrow.png": "/GCA-karur/static/media/left arrow.4ac8dc10f00213a828f8.png",
+    "main.css": "/GCA-karur/static/css/main.5531c222.css",
+    "main.js": "/GCA-karur/static/js/main.2bcc98ef.js",
     "static/media/calender logo.png": "/GCA-karur/static/media/calender logo.d898d735635dab6fabe5.png",
     "index.html": "/GCA-karur/index.html",
-    "main.a11f5b74.css.map": "/GCA-karur/static/css/main.a11f5b74.css.map",
-    "main.d1dc599e.js.map": "/GCA-karur/static/js/main.d1dc599e.js.map"
+    "main.5531c222.css.map": "/GCA-karur/static/css/main.5531c222.css.map",
+    "main.2bcc98ef.js.map": "/GCA-karur/static/js/main.2bcc98ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.a11f5b74.css",
-    "static/js/main.d1dc599e.js"
+    "static/css/main.5531c222.css",
+    "static/js/main.2bcc98ef.js"
   ]
 }

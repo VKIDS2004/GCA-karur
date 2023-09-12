@@ -201,12 +201,17 @@ margin:  0 auto;
   height:70px; 
 }
 .period-list ul{
- 
+  width:100%;
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-around;
+  gap: 1%;
   padding: 10px;
+}
+
+.period-list ul li{
+  /* flex-grow: 1; */
+  /* background-color: red; */
 }
 
 .holiday-quote{
@@ -297,4 +302,18 @@ margin:  0 auto;
 
 .activecol{
   border: 2px solid white;
+}
+
+
+@media only screen and (max-width: 400px){
+  .date_day h3{
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 350px){
+.header h1{
+  font-size: 1.2rem;
+}
+
 }

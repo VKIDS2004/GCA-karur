@@ -62,14 +62,13 @@ function Dayorder({ step }) {
 
 
         <div className="period-list">
-            {curdayord?curdayord.dayorder!==0?<div>
-                <ul>
+            {curdayord?curdayord.dayorder!==0?<ul>
                 {curdayordperiods.map((hr,i)=>
                     
                         <List roman={roman} hr={hr} i={i} key={i} NowHour={NowHour}/>
                 )}
                 </ul>
-            </div>:<p className='msg-box'>Don't waste your time</p>:<p className='msg-box'>stay tune</p>}
+            :<p className='msg-box'>Don't waste your time</p>:<p className='msg-box'>stay tune</p>}
         </div>
       </div>
     </div>

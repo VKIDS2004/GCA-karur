@@ -5,7 +5,7 @@ function Colortheme({color,setcolor}) {
     useEffect(function(){
         let the=localStorage.getItem("theme")
         console.log(the)
-        the?setcolor(the):setcolor("green")
+        the?setcolor(the):setcolor("rgb(30, 30, 30)")
     },[])
 
     function setcol(curcol){

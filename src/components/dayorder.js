@@ -19,22 +19,36 @@ function Dayorder({ step }) {
 //   let periods = dayOrder[curdate - 1]?.periods;
   // console.log(date.getDay());
 
+  const[NowHour,setNowHour ]  = useState(-1);
+  
   useEffect(function(){
-    let hour = date.getHours();
-    let min = date.getMinutes();
-    let now ;
-
-    // if(hour<=13 && min >= 15)
-    //     now = 1;
-    // else if(hour>=14 && min >= 10)
-    //     now = 2;
-    // else if(hour>=15 && min >= 5)
-    //     now = 2;
-    // else if(hour>=16 && min >= 0)
-    //     now = 2;
-    // else if(hour>=17 && min >=55)
-    //     now = 2;
-  })
+   const a =  setInterval(() => {
+      let date = new Date();
+    let hour=date.getHours();
+    // let hour=12;
+    let min= date.getMinutes();
+    // let min= 55;
+  
+      if((hour===13&&min>=15)||(hour===14&&min<=10))
+        setNowHour(1);
+      else if((hour===14&&min>=10)||(hour===15&&min<=5))
+      setNowHour(2);
+      else if((hour===15&&min>=5)||(hour===16&&min<=0))
+      setNowHour(3);
+      else if((hour===16&&min>=0)||(hour===16&&min<=55))
+      setNowHour(4);
+      else if((hour===16&&min>=55)||(hour===17&&min<=55))
+      setNowHour(5);
+      else setNowHour(-1)
+      // else now_hour = -1;
+      console.log(NowHour);
+      
+    }, 1000);
+    
+    return ()=>{clearInterval(a)}
+  },[NowHour]
+  )
+  // console.log(NowHour);
 
   return (
     <div className="time-table-con">
@@ -52,7 +66,7 @@ function Dayorder({ step }) {
                 <ul>
                 {curdayordperiods.map((hr,i)=>
                     
-                        <List roman={roman} hr={hr} i={i} key={i}/>
+                        <List roman={roman} hr={hr} i={i} key={i} NowHour={NowHour}/>
                 )}
                 </ul>
             </div>:<p className='msg-box'>Don't waste your time</p>:<p className='msg-box'>stay tune</p>}
@@ -62,12 +76,31 @@ function Dayorder({ step }) {
   );
 }
 
-function List({roman,hr,i}) {
+function List({roman,hr,i,NowHour}) {
     return ( <li>
         <h3>{roman[i]}</h3>
-        <p className={hr.toString() === "LAB" ? "labhour period" : "period"}>{hr}</p>
+        <div className={`${hr.toString() === "LAB" ? "labhour period" : "period"} ${NowHour!==-1&&NowHour===i+1&&"active"}`}>
+          {NowHour!==-1&&NowHour===i+1&&<p className='red-dot'>&#9679;</p>}
+          <p > {hr}</p>{/*i===0&&<span> </span>*/}
+        </div>
+       
     </li>
     )
 }
 
+
+
+
 export default Dayorder;
+
+
+// if((hour===13&&min>=15)||(hour===14&&min<=10))
+//         setNowHour(1);
+//       else if((hour===14&&min>=10)||(hour===15&&min<=5))
+//       setNowHour(2);
+//       else if((hour===15&&min>=5)||(hour===16&&min<=0))
+//       setNowHour(3);
+//       else if((hour===16&&min>=0)||(hour===16&&min<=55))
+//       setNowHour(4);
+//       else if((hour===16&&min>=55)||(hour===17&&min<=55))
+//       setNowHour(5);

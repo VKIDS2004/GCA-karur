@@ -7,7 +7,7 @@ export var dayOrder = [
     },
     {
         order : "2",
-        periods:["LAB","LAB","LAB","OS","PHP"]
+        periods:["LAB","LAB","LAB","OS","LIB"]
     },
     {
         order : "3",

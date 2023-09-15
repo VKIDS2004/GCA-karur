@@ -59,7 +59,7 @@ function Time() {
     let hour = time.getHours() < 13 ? time.getHours() : time.getHours()%12 ;
     let min = time.getMinutes();
     let sec = time.getSeconds();
-    let ampm = time.getHours() < 13 ? "AM" : "PM";
+    let ampm = time.getHours() <= 11 && min<=59? "AM" : "PM";
 
     let now_hour;
 

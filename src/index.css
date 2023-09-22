@@ -17,8 +17,26 @@
 .App{
   background-color: var(--main-light-color);
   height: 100vh;
+  min-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.copyright{
+
+  /* justify-self: flex-end; */
+  /* width: 100%; */
+  font-size: 15px;
+  color: grey;
+  flex-grow: 1;
+  padding-bottom: 10px;
+  display: flex;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
 
 .header{
   width: 100%;

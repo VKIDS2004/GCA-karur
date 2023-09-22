@@ -68,7 +68,7 @@ function Dayorder({ step }) {
                         <List roman={roman} hr={hr} i={i} key={i} NowHour={NowHour}/>
                 )}
                 </ul>
-            :<p className='msg-box'>Don't waste your time</p>:<p className='msg-box'>stay tune</p>}
+            :<p className='msg-box'>Learn something new every day</p>:<p className='msg-box'>stay tune</p>}
         </div>
       </div>
     </div>

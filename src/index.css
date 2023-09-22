@@ -84,7 +84,7 @@
   width: min(90%,400px);
   height: 80px;
   /* width: min(90%,600px); */
-  margin: 20px auto;
+  margin: 20px auto 0;
   color:  var(--main-color);
   background-color: rgba(0, 0, 0, 0.158);
   border-radius: 20PX;

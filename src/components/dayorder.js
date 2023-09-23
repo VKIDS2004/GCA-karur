@@ -41,7 +41,6 @@ function Dayorder({ step }) {
       setNowHour(5);
       else setNowHour(-1)
       // else now_hour = -1;
-      console.log(NowHour);
       
     }, 1000);
     

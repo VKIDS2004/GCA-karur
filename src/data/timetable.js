@@ -1,43 +1,198 @@
 
 
+// export var dayOrder = [
+//     {
+//         order : "1",
+//         periods:["ASP","MCP","OS","MCP","DAA"]
+//     },
+//     {
+//         order : "2",
+//         periods:["LAB","LAB","LAB","OS","LIB"]
+//     },
+//     {
+//         order : "3",
+//         periods:["DAA","ASP","SS","SS","PHP"]
+//     },
+//     {
+//         order : "4",
+//         periods:["ASP","OS","MCP","DAA","OS"]
+//     },
+//     {
+//         order : "5",
+//         periods:["DAA","ASP","OS","ASP","PHP"]
+//     },
+//     {
+//         order : "6",
+//         periods:["LAB","LAB","LAB","DAA","MCP"]
+//     }
+// ]
+
 export var dayOrder = [
     {
         order : "1",
-        periods:["ASP","MCP","OS","MCP","DAA"]
+        periods:["CG","DCN","SE","PY","GE"]
     },
     {
         order : "2",
-        periods:["LAB","LAB","LAB","OS","LIB"]
+        periods:["LAB","LAB","LAB","SE","SE"]
     },
     {
         order : "3",
-        periods:["DAA","ASP","SS","SS","PHP"]
+        periods:["PY","DCN","PY","SE","SE"]
     },
     {
         order : "4",
-        periods:["ASP","OS","MCP","DAA","OS"]
+        periods:["CG","SE","PY","CG","DCN"]
     },
     {
         order : "5",
-        periods:["DAA","ASP","OS","ASP","PHP"]
+        periods:["PY","PY","CG","DCN","DCN"]
     },
     {
         order : "6",
-        periods:["LAB","LAB","LAB","DAA","MCP"]
+        periods:["CG","DCN","LAB","LAB","LAB"]
     }
 ]
 
 export var monthOrder = [
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
-  [],
   [
     {
+      "date": 1,
+      "dayorder": 0
+     },
+     {
+      "date": 2,
+      "dayorder": 1
+     },
+     {
+      "date": 3,
+      "dayorder": 2
+     },
+     {
+      "date": 4,
+      "dayorder": 3
+     },
+     {
+      "date": 5,
+      "dayorder": 4
+     },
+     {
+      "date": 6,
+      "dayorder": 0
+     },
+     {
+      "date": 7,
+      "dayorder": 0
+     },
+     {
+      "date": 8,
+      "dayorder": 5
+     },
+     {
+      "date": 9,
+      "dayorder": 6
+     },
+     {
+      "date": 10,
+      "dayorder": 1
+     },
+     {
+      "date": 11,
+      "dayorder": 2
+     },
+     {
+      "date": 12,
+      "dayorder": 3
+     },
+     {
+      "date": 13,
+      "dayorder": 0
+     },
+     {
+      "date": 14,
+      "dayorder": 0,
+      "holiday": "Pongal"
+     },
+     {
+      "date": 15,
+      "dayorder": 0,
+      "holiday": "Pongal"
+     },
+     {
+      "date": 16,
+      "dayorder": 0,
+      "holiday": "Pongal"
+     },
+     {
+      "date": 17,
+      "dayorder": 0
+     },
+     {
+      "date": 18,
+      "dayorder": 4
+     },
+     {
+      "date": 19,
+      "dayorder": 5
+     },
+     {
+      "date": 20,
+      "dayorder": 0
+     },
+     {
+      "date": 21,
+      "dayorder": 0
+     },
+     {
+      "date": 22,
+      "dayorder": 6
+     },
+     {
+      "date": 23,
+      "dayorder": 1
+     },
+     {
+      "date": 24,
+      "dayorder": 2
+     },
+     {
+      "date": 25,
+      "dayorder": 0
+     },
+     {
+      "date": 26,
+      "dayorder": 0
+     },
+     {
+      "date": 27,
+      "dayorder": 0
+     },
+     {
+      "date": 28,
+      "dayorder": 0
+     },
+     {
+      "date": 29,
+      "dayorder": 3
+     },
+     {
+      "date": 30,
+      "dayorder": 4
+     },
+     {
+      "date": 31,
+      "dayorder": 5
+     }
+     
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [{
       date: 1,
       dayorder: 5
     },
@@ -161,7 +316,7 @@ export var monthOrder = [
       dayorder: 0
     }
   ],
-    [{
+  [{
       date: 1,
       dayorder: 0
     },
@@ -287,7 +442,7 @@ export var monthOrder = [
     {
       date: 31,
       dayorder: 5
-    }],
+  }],
     [{
       date: 1,
       dayorder: 6
@@ -433,7 +588,133 @@ export var monthOrder = [
       dayorder: 0,
       holiday: "6th sem day order update soon"
     }],
-    []
+    [
+      {
+        "date": 1,
+        "dayorder": 5
+       },
+       {
+        "date": 2,
+        "dayorder": 0
+       },
+       {
+        "date": 3,
+        "dayorder": 0
+       },
+       {
+        "date": 4,
+        "dayorder": 4
+       },
+       {
+        "date": 5,
+        "dayorder": 1
+       },
+       {
+        "date": 6,
+        "dayorder": 2
+       },
+       {
+        "date": 7,
+        "dayorder": 3
+       },
+       {
+        "date": 8,
+        "dayorder": 4
+       },
+       {
+        "date": 9,
+        "dayorder": 0
+       },
+       {
+        "date": 10,
+        "dayorder": 0
+       },
+       {
+        "date": 11,
+        "dayorder": 5
+       },
+       {
+        "date": 12,
+        "dayorder": 6
+       },
+       {
+        "date": 13,
+        "dayorder": 1
+       },
+       {
+        "date": 14,
+        "dayorder": 2
+       },
+       {
+        "date": 15,
+        "dayorder": 3
+       },
+       {
+        "date": 16,
+        "dayorder": 0
+       },
+       {
+        "date": 17,
+        "dayorder": 0
+       },
+       {
+        "date": 18,
+        "dayorder": 4
+       },
+       {
+        "date": 19,
+        "dayorder": 5
+       },
+       {
+        "date": 20,
+        "dayorder": 6
+       },
+       {
+        "date": 21,
+        "dayorder": 1
+       },
+       {
+        "date": 22,
+        "dayorder": 2
+       },
+       {
+        "date": 23,
+        "dayorder": 0
+       },
+       {
+        "date": 24,
+        "dayorder": 0
+       },
+       {
+        "date": 25,
+        "dayorder": 0,
+        "holiday": "Christmas"
+       },
+       {
+        "date": 26,
+        "dayorder": 3
+       },
+       {
+        "date": 27,
+        "dayorder": 4
+       },
+       {
+        "date": 28,
+        "dayorder": 5
+       },
+       {
+        "date": 29,
+        "dayorder": 6
+       },
+       {
+        "date": 30,
+        "dayorder": 0
+       },
+       {
+        "date": 31,
+        "dayorder": 0
+       }
+    ]
 
   ] 
 

@@ -28,6 +28,7 @@ function Dayorder({ step }) {
     // let hour=12;
     let min= date.getMinutes();
     // let min= 55;
+
   
       if((hour===13&&min>=15)||(hour===14&&min<=10))
         setNowHour(1);
@@ -64,7 +65,7 @@ function Dayorder({ step }) {
             {curdayord?curdayord.dayorder!==0?<ul>
                 {curdayordperiods.map((hr,i)=>
                     
-                        <List roman={roman} hr={hr} i={i} key={i} NowHour={NowHour}/>
+                        <List roman={roman} hr={hr} i={i} key={i} NowHour={NowHour} step={step}/>
                 )}
                 </ul>
             :<p className='msg-box'>-</p>:<p className='msg-box'>stay tune</p>}
@@ -74,11 +75,11 @@ function Dayorder({ step }) {
   );
 }
 
-function List({roman,hr,i,NowHour}) {
+function List({roman,hr,i,NowHour,step}) {
     return ( <li>
         <h3>{roman[i]}</h3>
         <div className={`${hr.toString() === "LAB" ? "labhour period" : "period"} ${NowHour!==-1&&NowHour===i+1&&"active"}`}>
-          {NowHour!==-1&&NowHour===i+1&&<p className='red-dot'>&#9679;</p>}
+          {NowHour!==-1&&NowHour===i+1&&step==0&&<p className='red-dot'>&#9679;</p>}
           <p > {hr}</p>{/*i===0&&<span> </span>*/}
         </div>
        

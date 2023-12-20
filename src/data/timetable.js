@@ -27,32 +27,61 @@
 //     }
 // ]
 
+// export var dayOrder = [
+//     {
+//         order : "1",
+//         periods:["CG","DCN","SE","PY","GE"]
+//     },
+//     {
+//         order : "2",
+//         periods:["LAB","LAB","LAB","SE","SE"]
+//     },
+//     {
+//         order : "3",
+//         periods:["PY","DCN","PY","SE","SE"]
+//     },
+//     {
+//         order : "4",
+//         periods:["CG","SE","PY","CG","DCN"]
+//     },
+//     {
+//         order : "5",
+//         periods:["PY","PY","CG","DCN","DCN"]
+//     },
+//     {
+//         order : "6",
+//         periods:["CG","DCN","LAB","LAB","LAB"]
+//     }
+// ]
+
+
 export var dayOrder = [
-    {
-        order : "1",
-        periods:["CG","DCN","SE","PY","GE"]
-    },
-    {
-        order : "2",
-        periods:["LAB","LAB","LAB","SE","SE"]
-    },
-    {
-        order : "3",
-        periods:["PY","DCN","PY","SE","SE"]
-    },
-    {
-        order : "4",
-        periods:["CG","SE","PY","CG","DCN"]
-    },
-    {
-        order : "5",
-        periods:["PY","PY","CG","DCN","DCN"]
-    },
-    {
-        order : "6",
-        periods:["CG","DCN","LAB","LAB","LAB"]
-    }
+  {
+      order : "1",
+      periods:["CG","PY","SE","DCN","CG"]
+  },
+  {
+      order : "2",
+      periods:["CG","DCN","PY","SE","E"]
+  },
+  {
+      order : "3",
+      periods:["LAB","LAB","LAB","SE","SE"]
+  },
+  {
+      order : "4",
+      periods:["CG","SE","GE","PY","DCN"]
+  },
+  {
+      order : "5",
+      periods:["PY","PY","CG","DCN","DCN"]
+  },
+  {
+      order : "6",
+      periods:["PY","DCN","LAB","LAB","LAB"]
+  }
 ]
+
 
 export var monthOrder = [
   [

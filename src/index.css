@@ -3,7 +3,7 @@
   /* --main-color : rgb(95, 44, 95); */
   /* --main-light-color :rgb(158, 54, 158); */
 
-  --main-color : rgb(49, 49, 49);
+  --main-color : rgb(215, 133, 133);
   --main-light-color :color-mix(in srgb, var(--main-color) 20%, white);
   --lab-color :color-mix(in srgb, var(--main-color) 85%, white);
   
@@ -14,9 +14,12 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
-.App{
+body{
+
   background-color: var(--main-light-color);
-  height: 100vh;
+}
+.App{
+  min-height: 100svh;
   min-width: 340px;
   display: flex;
   flex-direction: column;
@@ -42,7 +45,7 @@
   width: 100%;
   height:fit-content;
   padding: 10px 0;
-  background-color: var(--main-color);
+  background-color: var(--main-color) ;
   display: flex;
   flex-direction: column;
   align-items: center;

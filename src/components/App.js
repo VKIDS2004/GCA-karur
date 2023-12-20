@@ -8,7 +8,7 @@ import TotalClicks from "./TotalClicks";
 
 function App() {
   const [step, setStep] = useState(0);
-  const [color, setcolor] = useState("rgb(30, 30, 30)");
+  const [color, setcolor] = useState("#23422b");
 
   
 

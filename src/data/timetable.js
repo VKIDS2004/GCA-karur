@@ -62,7 +62,7 @@ export var dayOrder = [
   },
   {
       order : "2",
-      periods:["CG","DCN","PY","SE","E"]
+      periods:["CG","DCN","PY","SE","SE"]
   },
   {
       order : "3",
@@ -708,7 +708,7 @@ export var monthOrder = [
        },
        {
         "date": 23,
-        "dayorder": 0
+        "dayorder": 1
        },
        {
         "date": 24,

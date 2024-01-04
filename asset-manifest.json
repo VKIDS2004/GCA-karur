@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/GCA-karur/static/css/main.83e9c66c.css",
-    "main.js": "/GCA-karur/static/js/main.55c4e537.js",
-    "static/media/calender logo.png": "/GCA-karur/static/media/calender logo.d898d735635dab6fabe5.png",
+    "main.css": "/GCA-karur/static/css/main.91c709a4.css",
+    "main.js": "/GCA-karur/static/js/main.da0f805d.js",
+    "static/media/user-logo a.jpg": "/GCA-karur/static/media/user-logo a.6c900a205e7f841b5216.jpg",
     "index.html": "/GCA-karur/index.html",
-    "main.83e9c66c.css.map": "/GCA-karur/static/css/main.83e9c66c.css.map",
-    "main.55c4e537.js.map": "/GCA-karur/static/js/main.55c4e537.js.map"
+    "main.91c709a4.css.map": "/GCA-karur/static/css/main.91c709a4.css.map",
+    "main.da0f805d.js.map": "/GCA-karur/static/js/main.da0f805d.js.map"
   },
   "entrypoints": [
-    "static/css/main.83e9c66c.css",
-    "static/js/main.55c4e537.js"
+    "static/css/main.91c709a4.css",
+    "static/js/main.da0f805d.js"
   ]
 }

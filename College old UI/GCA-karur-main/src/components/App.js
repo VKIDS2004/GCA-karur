@@ -10,7 +10,7 @@ function App() {
   const [step, setStep] = useState(0);
   const [color, setcolor] = useState("#23422b");
 
-  
+  localStorage.clear();
 
 
 

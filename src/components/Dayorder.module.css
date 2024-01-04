@@ -1,0 +1,48 @@
+.dayorder_container{
+
+    margin-top: 20px;
+    width: min(90%,400px);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+
+.dayorder_container table{
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+}
+
+.dayorder_container tr:nth-child(even){
+    background-color: rgba(245, 245, 245, 0.87);
+}
+
+.dayorder_container td{
+    padding: 5px 10px;
+}
+
+
+.dayorder_container tr td:first-child{
+    text-align: center;
+}
+.dayorder_container tr td:nth-child(2){
+    text-align: left;
+    font-weight: 550;
+}
+.dayorder_container tr td:nth-child(3){
+    /* background-color: rebeccapurple; */
+}
+.dayorder_container tr td:nth-child(3) p{
+    font-size: 12px;
+    text-align: right;
+    margin-left: auto;
+    /* background-color: rgba(196, 255, 181, 0.616); */
+    padding: 3px 15px;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.dayorder_container p:global(.active){
+    background-color: rgba(255, 181, 181, 0.616) !important;
+}

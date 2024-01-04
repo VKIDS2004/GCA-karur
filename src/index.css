@@ -1,22 +1,25 @@
  
 :root{
-  /* --main-color : rgb(95, 44, 95); */
-  /* --main-light-color :rgb(158, 54, 158); */
 
-  --main-color : rgb(215, 133, 133);
-  --main-light-color :color-mix(in srgb, var(--main-color) 20%, white);
-  --lab-color :color-mix(in srgb, var(--main-color) 85%, white);
+  --main-color : rgb(61, 61, 61);
+  /* --main-light-color :color-mix(in srgb, var(--main-color) 20%, white); */
+  /* --lab-color :color-mix(in srgb, var(--main-color) 85%, white); */
+
+  --main-light-color : rgb(238, 238, 238);
   
 }
  *{
   padding: 0;
   margin: 0;
+  border: none;
   font-family: sans-serif;
   box-sizing: border-box;
 }
 body{
 
-  background-color: var(--main-light-color);
+  /* background-color: var(--main-light-color); */
+  background-color: rgb(241, 241, 241);
+  /* background-color:rgb(65, 65, 65); */
 }
 .App{
   min-height: 100svh;
@@ -24,35 +27,37 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .copyright{
 
-  /* justify-self: flex-end; */
-  /* width: 100%; */
   font-size: 15px;
   color: grey;
-  flex-grow: 1;
   padding-bottom: 10px;
-  display: flex;
-  /* background-color: yellow; */
-  display: flex;
-  justify-content: center;
-  align-items: end;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(0%);
 }
 
 .header{
   width: 100%;
   height:fit-content;
   padding: 10px 0;
-  background-color: var(--main-color) ;
+  margin-bottom: 10px;
+  background-color: rgb(56, 56, 56);
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 
 .header h1{
-  color: aliceblue;
+  color: rgb(255, 255, 255);
+  /* color: var(--main-color); */
   font-size: 1.5rem;
   animation-name: headH1ani;
   animation-duration: .6s;
@@ -60,136 +65,25 @@ body{
 
 .header p{
   color: white;
+  /* color: var(--main-color); */
   animation-name: headPani;
   animation-duration: 1s;
 }
-@keyframes headH1ani {
-  0%{
-    transform: translateY(-100PX);
-  }
-  100%{
-    transform: translateX(0);
-  }
-}
-@keyframes headPani {
-  0%{
-    /* transform: translateY(30PX); */
-    opacity: 0;
-  }
-  100%{
-    /* transform: translateX(0); */
-    opacity: 1;
-  }
-}
-
-.time-con{
-  padding: 10px 15px;
-  width: min(90%,400px);
-  height: 80px;
-  /* width: min(90%,600px); */
-  margin: 20px auto 0;
-  color:  var(--main-color);
-  background-color: rgba(0, 0, 0, 0.158);
-  border-radius: 20PX;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  /* justify-content: space-around; */
-
-  position: relative;
-  animation-name: time;
-  animation-duration: 1s;
-}
-
-@keyframes time {
-  0%{
-    transform: translateY(300px);
-    opacity: 0;
-  }
-
-  100%{
-    opacity: 1;
-  }
-}
-
-.date_day{
-  flex-grow: 1;
-  /* flex-shrink: 1; */
-}
-.time-con h3{
-  font-size: 16px;
-  padding: 5px 0;
-}
-
-.time-con button{
-  background-color: transparent;
-  border: none;
-  margin: none;
-  /* outline: none; */
-}
-.time-con button:active{
-  opacity: .8;
-}
-.cal-logo{
-  width: 40px;
-  height: 40px;
-}
-.calender-reset{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-.reset-btn{
-  padding: 2px 5px;
-  font-size: 10px;
-  border-radius: 5px;
-  color: white;
-  background-color:  var(--main-color) !important;
-}
-
-.time-con .box h3{
-  width: 50%;
-  height: 40%;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background-color:  var(--main-color);
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%);
-  text-align: center;
-  color: white;
-  font-size: 20px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 
-.leftArrowImg,.rightArrowImg{
-  width: 30px;
-}
-/* ---------------------------------------------------------------- */
-.time-table-con{
-  width: min(90%,400px);
-  /* width: fit-content; */
-  margin:  50px auto 0;
-  
-  animation-name: time;
-  animation-duration: 1.4s;
-}
+/* ---------------------------------------------------------------- dayorder */
+/*
 .dayorder-table{
-width: 100%;
-margin:  0 auto;
+  width: min(90%,400px);
+  margin-top: 20px;
   list-style: none;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.158);
+  background-color: rgba(49, 49, 49, 0.158);
+  box-shadow: rgba(32, 32, 32, 0.281) 0px 1px 6px;
 }
 .period{
   width: 50px;
@@ -214,13 +108,14 @@ margin:  0 auto;
   font-size: 20px;
   padding: 10px;
   color: white;
-  background-color:  var(--main-color);
+  color: black;
 }
 .period-list{
   display: flex;
   justify-content: center;
   align-items: center;
   height:70px; 
+  background-color: white;
 }
 .period-list ul{
   width:100%;
@@ -229,102 +124,185 @@ margin:  0 auto;
   justify-content: space-around;
   gap: 1%;
   padding: 10px;
+
 }
 
-.period-list ul li{
-  /* flex-grow: 1; */
-  /* background-color: red; */
-}
 
 .holiday-quote{
   font-size: 20px;
 }
 
 .labhour.period{
-  background-color:  var(--lab-color);
+  background-color: rgb(105, 105, 105); ;
 }
 
 .msg-box{
   font-size: 20px;
-}
-/* ----------------------------------------color changer --------------------- */
-.color-con{
-  /* padding: 10px 15px; */
+}*/
+
+
+/* ------------------------------------------------------------------------------ CC Conatiner */
+
+.cc_container{
   width: min(90%,400px);
-  height: 80px;
-  /* width: min(90%,600px); */
-  margin: 20px auto;
-  color:  var(--main-color);
-  background-color: rgba(0, 0, 0, 0.158);
-  border-radius: 10PX;
-  overflow: hidden;
-  /* justify-content: space-around; */
-
-  position: relative;
-  animation-name: time;
-  animation-duration: 2s;
-}
-
-.color-con h2{
-  width: 100%;
-  padding: 7px 0;
-  color: white;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: var(--main-color);
-}
-
-.color-con-btns{
-  width: 100%;
-  height: 43px;
+  margin-top: 20px;
   display: flex;
-  
-  justify-content: space-evenly;
   align-items: center;
+  gap: 20px;
 }
 
-/* .dayorder-table{
+.cc_container>div{
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+  /* flex-grow: 1; */
+  flex-basis: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 10%;
+  /* border: 2px solid rgba(70, 70, 70, 0.521); */
+}
+
+.cc_container .calender{
+  background-color: rgb(255, 255, 255);
+}
+.cc_container .clock{
+  background-color: rgb(255, 255, 255);
+}
+
+.calender {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 30px; */
+  font-size: 25px;
+}
+
+.calender h1{
+  font-size: 80px;
+  line-height: 0;
+}
+/* ------------------------------------------------------------------------------ Clock */
+
+
+.clock-con{
   width: 100%;
-  margin:  0 auto;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.158);
-  } */
-.color-changer{
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  /* border-radius: 50%; */
+  /* border: 4px solid rgb(0, 0, 0); */
+  position: relative;
+  /* box-shadow: rgba(0, 0, 0, 0.36) 0px 22px 70px 4px; */
+
+  /* background-color: lightblue; */
+}
+.clock-con label{
+  text-align: center;
+  position: absolute;
+  /* background-color: lightgreen;  */
+  inset: 1px;
+
+  transform: rotate(calc(var(--i)*(360deg/12)));
+}
+
+.clock-con label span{
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 15px;
+  transform: rotate(calc(var(--i)*(-360deg/12)));
+  user-select: none;
+}
+
+
+.needle-con>div{
+  border-radius: 10px;
+}
+
+.cen-cir{
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  inset: 50% 0 0 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgb(255, 55, 55);
+  z-index: 3;
+}
+
+.cen-cir-2{
+  width: 8%;
+  height: 8%;
+  background-color: black;
+  z-index: 5;
+}
+#hour{
+  width: 4px;
+  height: 25%;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%);
+  transform-origin: 50% 100%;
+  z-index: 1;
+}
+
+#min{
+  width: 3px;
+  height: 32%;
+  background-color: rgb(79, 79, 79);
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%);
+  transform-origin: 50% 100%;
+  z-index: 2;
+}
+
+
+
+#sec{
+  width: 1.6px;
+  height: 37%;
+  background-color: rgb(255, 55, 55);
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%);
+  transform-origin: 50% 100%;
+  z-index: 4;
+}
+
+
+/* ------------------------------------------------------------------------ Skip */
+
+.skip-container{
+  margin-top: 20px;
+  /* padding: 20px; */
+  border-radius: 10px;
+  width: min(90%,400px);
+  display: flex;
+  gap: 15px;
+  /* background-color: rgb(255, 255, 255); */
+}
+
+.skip-container button{
+  width: 50%;
+  /* flex-grow: 1; */
+  font-size: 14px;
+  padding: 15px 10px;
   border: none;
-  outline: none;
-  margin: 0;
-  block-size: 20px;
-  inline-size: 20px;
-  border-radius: 5px;
-}
-.color-changer-yellow{
-  background-color: rgb(0, 50, 63);
-}
-.color-changer-brown{
-  background-color: rgb(88, 9, 9);
+  color: var(--main-color);
+  background-color: white;
+  border: 2px solid rgb(161, 161, 161);
+  border-radius: 30px;
 }
 
-.color-changer-black{
-  background-color: rgb(31, 31, 31);
-}
 
-.color-changer-voilet{
-  background-color: rgb(65, 28, 89);
-}
+/* --------------------------------------------------------------- Login page*/
 
-.color-changer-green{
-  background-color: rgb(11, 92, 0);
-}
-
-.activecol{
-  border: 2px solid white;
-}
+/* ------------------------------------------------------------------------------ */
 
 
 @media only screen and (max-width: 400px){
@@ -339,3 +317,6 @@ margin:  0 auto;
 }
 
 }
+
+
+

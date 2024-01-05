@@ -44,7 +44,7 @@ function AuthProvider({ children }) {
   async function login(name, rollno) {
         setUser(name, rollno);
         dispatch({ type: "login", payload: {name,rollno} });
-        navi('/GCA-karur/home')
+        navi('/home')
     }
 
 

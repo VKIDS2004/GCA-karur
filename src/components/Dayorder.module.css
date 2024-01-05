@@ -31,19 +31,29 @@
     font-weight: 550;
 }
 .dayorder_container tr td:nth-child(3){
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+
  
 }
 .dayorder_container tr td:nth-child(3) p{
     font-size: 12px;
     font-family: sans-serif;
-    text-align: right;
-    margin-left: auto;
+    /* text-align: right; */
+    /* margin-left: auto; */
     /* background-color: rgba(196, 255, 181, 0.616); */
-    padding: 3px 15px;
+    /* background-color: rgba(255, 181, 181, 0.616) ; */
+    padding: 3px 5px;
     border-radius: 15px;
     width: fit-content;
 }
 
 .dayorder_container p:global(.active){
     background-color: rgba(255, 181, 181, 0.616) !important;
+}
+
+
+p:global(.remain){
+    background-color: rgba(146, 245, 121, 0.616) !important;
 }

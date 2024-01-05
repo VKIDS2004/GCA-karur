@@ -21,7 +21,7 @@ function TotalClicks() {
         getApi();
       }, []);
 
-    return <p className="copyright">Copyright @ 2023-2024 Chandru (  {clicks?`viewers : ${clicks}`:"loading...."} )</p>
+    return <p className="copyright">Copyright @ 2024 Chandru (  {clicks?`viewers : ${clicks}`:"loading...."} )</p>
       
 }
 

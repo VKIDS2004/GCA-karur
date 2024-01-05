@@ -31,10 +31,11 @@
     font-weight: 550;
 }
 .dayorder_container tr td:nth-child(3){
-    /* background-color: rebeccapurple; */
+ 
 }
 .dayorder_container tr td:nth-child(3) p{
     font-size: 12px;
+    font-family: sans-serif;
     text-align: right;
     margin-left: auto;
     /* background-color: rgba(196, 255, 181, 0.616); */

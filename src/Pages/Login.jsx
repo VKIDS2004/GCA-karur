@@ -19,7 +19,7 @@ function Login() {
     const user = getLocalUser();
     if (user) {
       login(user.name, user.rollno);
-      navi("/GCA-karur/home");
+      navi("/home");
     }
   }, []);
 

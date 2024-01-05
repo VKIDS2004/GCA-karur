@@ -7,7 +7,7 @@ function ProtectedRoute({children}) {
     const {isAuth} = useAuth();
     const navi = useNavigate();
     useEffect(()=>{
-        !isAuth&&navi('/GCA-karur')
+        !isAuth&&navi('/')
     },[isAuth,navi])
 
 

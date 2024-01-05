@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import "./app.scss";
 import Home from "./Pages/Home";
-import { Routes ,Route, Navigate} from "react-router-dom";
+import { Routes ,Route} from "react-router-dom";
 import Login from "./Pages/Login";
 import ProtectedRoute from "./context/ProtectedRoute";
 import { useEffect } from "react";
@@ -16,9 +16,9 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-          <Route path="GCA-karur" element={<Login/>}/>
-          <Route path="/GCA-karur/home" element={<ProtectedRoute><Home/></ProtectedRoute>}/>
-          <Route path="*" element={<Navigate to='GCA-karur' />}/>
+          <Route path="/" element={<Login/>}/>
+          <Route path="/home" element={<ProtectedRoute><Home/></ProtectedRoute>}/>
+          <Route path="*" element={<ErrorPage/>}/>
       </Routes>
     </div>
   );

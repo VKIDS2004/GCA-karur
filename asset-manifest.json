@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/GCA-karur/static/css/main.27b6efd0.css",
-    "main.js": "/GCA-karur/static/js/main.bbac1cdf.js",
+    "main.css": "/GCA-karur/static/css/main.844268fd.css",
+    "main.js": "/GCA-karur/static/js/main.09ee7e1f.js",
     "static/media/user-logo.jpg": "/GCA-karur/static/media/user-logo.6c900a205e7f841b5216.jpg",
     "index.html": "/GCA-karur/index.html",
-    "main.27b6efd0.css.map": "/GCA-karur/static/css/main.27b6efd0.css.map",
-    "main.bbac1cdf.js.map": "/GCA-karur/static/js/main.bbac1cdf.js.map"
+    "main.844268fd.css.map": "/GCA-karur/static/css/main.844268fd.css.map",
+    "main.09ee7e1f.js.map": "/GCA-karur/static/js/main.09ee7e1f.js.map"
   },
   "entrypoints": [
-    "static/css/main.27b6efd0.css",
-    "static/js/main.bbac1cdf.js"
+    "static/css/main.844268fd.css",
+    "static/js/main.09ee7e1f.js"
   ]
 }

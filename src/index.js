@@ -8,8 +8,8 @@ import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode >
-    <BrowserRouter basename="GCA-karur">
-      <AuthProvider>
+    <BrowserRouter basename="/GCA-karur">
+      <AuthProvider> 
         <App />
       </AuthProvider>
     </BrowserRouter>
